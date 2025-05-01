@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinnIT Schulübersicht</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .subject {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .subject:hover {
+      transform: translateY(-4px);
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Schulische Übersicht</h1>
+
+    <h2>🧠 Allgemeinbildende Fächer</h2>
+    <div class="grid">
+      <div class="subject"><a href="faecher/mathematik.md">📐 Mathematik</a></div>
+      <div class="subject"><a href="faecher/wirtschaft-und-recht.md">💼 Wirtschaft und Recht</a></div>
+      <div class="subject"><a href="faecher/deutsch.md">📝 Deutsch</a></div>
+      <div class="subject"><a href="faecher/systemplanung-und-projektentwicklung.md">🗂️ Systemplanung & Projektentwicklung</a></div>
+      <div class="subject"><a href="faecher/englisch.md">🇬🇧 Englisch</a></div>
+    </div>
+
+    <h2>💻 Fachbezogene Fächer</h2>
+    <div class="grid">
+      <div class="subject"><a href="faecher/cabs-programmierung-c.md">🔧 CABS-Programmierung C</a></div>
+      <div class="subject"><a href="faecher/datenbanken-und-informationssysteme.md">🗃️ Datenbanken & Informationssysteme</a></div>
+      <div class="subject"><a href="faecher/programmieren-und-software.md">🧪 Programmieren & Software (C#)</a></div>
+      <div class="subject"><a href="faecher/netzwerksysteme-und-cyber-security.md">🛡️ Netzwerksysteme & Cyber Security</a></div>
+      <div class="subject"><a href="faecher/webprogrammierung-und-mobile-computing.md">🌐 Webprogrammierung & Mobile Computing</a></div>
+      <div class="subject"><a href="faecher/data-science-und-artificial-intelligence.md">📊 Data Science & Artificial Intelligence</a></div>
+      <div class="subject"><a href="faecher/medientechnik.md">🎨 Medientechnik</a></div>
+    </div>
+  </div>
+</body>
+</html>
